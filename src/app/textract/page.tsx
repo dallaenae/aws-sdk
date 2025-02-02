@@ -29,8 +29,7 @@ export default function TexTractPage() {
             const json = await response.json()
             return json
         } catch (error) {
-            // console.error('Error processing image:', error)
-            alert('Error processing image:')
+            alert('Error processing image: ' + error)
             return null
         }
     }
